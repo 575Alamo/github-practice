@@ -4,18 +4,18 @@ count = 0
 
 def increment():
     global count
-    count += 1
+    count += 2
     label.config(text=f"Count: {count}")
 
 def reset():
     global count
-    count = 0
+    count = 100
     label.config(text=f"Count: {count}")
 
 root = tk.Tk()
 root.title("Counter App")
 
-label = tk.Label(root, text="Count: 0", font=("Arial", 16))
+label = tk.Label(root, text="Count: 0", font=("Arial", 26))
 label.pack(padx=100, pady=50)
 
 inc_button = tk.Button(root, text="Increment", command=increment)
